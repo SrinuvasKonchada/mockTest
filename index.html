@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+        .container{
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+.main1{
+    border: 1px solid grey;
+    height: 100%;
+    width: 40vw;
+    border-radius: 10px;
+    padding: 10px;
+}
+.main2{
+    border: 1px solid grey;
+    height: 100%;
+    width: 40vw;
+    border-radius: 10px;
+}
+h3{
+    text-align: center;
+    padding: 20px;
+}
+#drop{
+    padding-right: 310px;
+}
+#form{
+    padding: 10px;
+}
+#btn{
+    border-radius: 5px;
+    background-color: blue;
+    width: 200px;
+    
+
+}
+#btn1{
+display: flex;
+justify-self: center;
+
+}
+.box{
+
+    padding-right:  200px;
+}
+#id{
+    display: flex;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+<div class="main1">
+<h3>Profile Info</h3>
+<form action="" id="form">
+    <div><label for="">Name</label></div>
+<div><input type="text" name="name" id="name" class="box"></div>
+<div><label for="">Designation</label></div>
+<div><input type="text" name="name" class="box"
+    id="name"></div>
+
+<div><label for="">Description</label></div>
+<div><input type="text" 
+    class="box" name="name" id="name"></div>
+<div><label for="">Profile Image</label></div>
+
+<div >
+    <select  name="" id="drop">
+        <option  value="" id="image11">select</option>
+        <option value=""id="image22">image2</option>
+        <option value="" id="image33">image3</option>
+        <option value="" id="image44">image4</option>
+    </select>
+</div>
+</form>
+<div id="btn1">
+    <button id="btn">create Card</button>
+</div>
+</div>
+
+<div class="main2">
+<h3>Card Preview</h3>
+<div id="hero">
+        
+    <div class="user"></div>
+    <div class="data">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</div>
+
+</div>
+
+
+    </div>
+
+<script>
+
+
+let images = {
+        image1:
+          "https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png",
+          image2:
+          "https://th.bing.com/th/id/OIP.HDu5teQHY2tdEWtXAWFryQHaHa?w=600&h=600&rs=1&pid=ImgDetMain",
+        image3:
+          "https://th.bing.com/th/id/OIP.ZqTEBplagzqWYvbqaa2dbwHaHa?w=500&h=500&rs=1&pid=ImgDetMain",
+        image4:
+          "https://i1.rgstatic.net/ii/profile.image/891858838372360-1589647125709_Q512/Yintan-Fan.jpg",
+      };
+      let us=document.getElementById("user1");
+      
+      let drop1=document.getElementById("drop")
+      let img1=document.getElementById("image11")
+      let img2=document.getElementById("image22")
+      let img3=document.getElementById("image33")
+      let img4=document.getElementById("image44")
+
+      drop1.addEventListener("change",()=>{
+        us.images.image1
+
+        // document.getElementById("placehere").appendChild("elem");
+
+      })
+
+
+
+
+</script>
+
+</body>
+</html>
